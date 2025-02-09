@@ -17,13 +17,13 @@ def index():
         try:
             # Generate Jungian interpretation using the new API
             response = client.chat.completions.create(
-                model="gpt-4",  # Use GPT-4 for text interpretation
+                model="gpt-4", 
                 messages=[
-                    {"role": "system", "content": "You are a Jungian psychoanalyst. Provide a detailed interpretation of the dream based on Carl Jung's theories, focusing on archetypes, the collective unconscious, and individuation."},
+                    {"role": "system", "content": "You are a Jungian psychoanalyst. Analyze the user's dream using Carl Jung's theories. Focus on archetypes, the collective unconscious, and individuation. Explore the symbolic meaning of figures, actions, and settings, and connect them to the dreamer's emotions and personal growth. Provide a concise interpretation (around 150 words) that is insightful and easy to understand, helping the dreamer uncover messages from their unconscious mind."},
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0.7,
-                max_tokens=150
+                max_tokens=200
             )
             result = response.choices[0].message.content
 
