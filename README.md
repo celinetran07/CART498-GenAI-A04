@@ -1,5 +1,3 @@
-# Jungian Dream Analysis Web Application
-This web application allows users to submit descriptions of their dreams and receive a Jungian interpretation along with a visual representation generated using OpenAI API and DALL-E models. This app integrates the principles of Carl Jung’s psychological theories to provide meaningful insights into the potential meanings of the dream. 
 
 ## Jungian Dreams Implementation
 ### Dream Analysis prompts 
